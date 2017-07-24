@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: "findbugs"
+apply plugin: 'com.getkeepsafe.dexcount'
 
 android {
     compileSdkVersion compileSdkVer
@@ -53,9 +54,4 @@ dependencies {
     compile libraries.rxJava
     compile libraries.rxAndroid
     annotationProcessor libraries.butterknifeCompiler
-//    compile project(':ui')
-//    compile project(':net')
-//    compile project(':media')
-//    compile project(':device')
-//    compile project(':data')
 }

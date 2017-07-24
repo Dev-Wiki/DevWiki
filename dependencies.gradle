@@ -30,14 +30,16 @@ ext {
         versions   : "0.15.0",
         buildGradle: "2.3.3",
         butterknife: "8.6.0",
-        kotlin     : "1.1.2-5"
+        kotlin     : "1.1.2-5",
+        dexcount   : "0.6.1",
     ]
 
     gradle_plugins = [
         versions   : "com.github.ben-manes:gradle-versions-plugin:${plugin_versions.versions}",
         buildGradle: "com.android.tools.build:gradle:${plugin_versions.buildGradle}",
         butterknife: "com.jakewharton:butterknife-gradle-plugin:${plugin_versions.butterknife}",
-        kotlin     : "org.jetbrains.kotlin:kotlin-gradle-plugin:${plugin_versions.kotlin}"
+        kotlin     : "org.jetbrains.kotlin:kotlin-gradle-plugin:${plugin_versions.kotlin}",
+        dexcount   : "com.getkeepsafe.dexcount:dexcount-gradle-plugin:${plugin_versions.dexcount}",
     ]
 
     versions = [
