@@ -1,0 +1,93 @@
+task checkDependency() {
+    println "-----------------开始执行-----------------"
+    group = 'buildCheck'
+    description = 'check libs dependencies'
+    def configDepens = getConfigDependencies()
+    def compileDepens = getProjectDependencies("compile")
+    List<MyDependency> resultConfig = new ArrayList<>()
+    List<MyDependency> resultCompile = new ArrayList<>()
+    compileDepens.each { compileDepen ->
+        if (!configDepens.values().contains(compileDepen)) {
+            resultCompile.add(compileDepen)
+            resultConfig.add(configDepens.get("${compileDepen.group}:${compileDepen.name}"))
+        }
+    }
+    if (resultCompile.size() > 0) {
+        println "依赖库与配置不一致,如下:"
+        resultCompile.each { myDependency ->
+//            println "统一配置:${myDependency.toJSON()}"
+//            println "实际配置:${resultConfig.get(resultCompile.indexOf(myDependency)).toJSON()}"
+        }
+//        throw new GradleException("依赖库与配置不一致")
+    }
+}
+
+def getProjectDependencies(String name) {
+    List<MyDependency> list = new ArrayList<>()
+    project.configurations.getByName(name).dependencies.each { depen ->
+        if (depen.group != null && !depen.group.equals("null")) {
+            MyDependency myDependency = new MyDependency()
+            myDependency.group = depen.group
+            myDependency.name = depen.name
+            myDependency.version = depen.version
+            list.add(myDependency)
+        }
+    }
+    return list
+}
+
+def getConfigDependencies() {
+    Map<String, MyDependency> map = new HashMap<>()
+    libraries.each { lib ->
+        def data = lib.toString().split("=")
+        data = data[1].split(":")
+        def depen = new MyDependency()
+        depen.group = data[0]
+        depen.name = data[1]
+        depen.version = data[2]
+        map.put("$depen.group:$depen.name", depen)
+    }
+    return map
+}
+
+class MyDependency {
+    String group
+    String name
+    String version
+
+    boolean equals(o) {
+        if (this.is(o)) return true
+        if (getClass() != o.class) return false
+
+        MyDependency that = (MyDependency) o
+
+        if (group != that.group) return false
+        if (name != that.name) return false
+        if (version != that.version) return false
+
+        return true
+    }
+
+    int hashCode() {
+        int result
+        result = (group != null ? group.hashCode() : 0)
+        result = 31 * result + (name != null ? name.hashCode() : 0)
+        result = 31 * result + (version != null ? version.hashCode() : 0)
+        return result
+    }
+
+
+    @Override
+    String toString() {
+        return """\
+        MyDependency{
+            group='$group', 
+            name='$name', 
+            version='$version'
+        }"""
+    }
+
+    String toJSON() {
+        return "{group : $group, name : $name, version : $version}"
+    }
+}
