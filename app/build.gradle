@@ -25,7 +25,7 @@ android {
 
 task findbugs(type: FindBugs,dependsOn:'assembleDebug') {
 
-    ignoreFailures= false
+    ignoreFailures= true
     effort= "default"
     reportLevel= "low"
     println( "$project.buildDir")
