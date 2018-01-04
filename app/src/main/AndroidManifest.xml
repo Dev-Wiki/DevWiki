@@ -57,6 +57,12 @@
             android:theme="@style/AppTheme.FullScreen"/>
         <activity android:name=".module.thread.rxjava.RxJavaActivity">
         </activity>
+        <activity
+            android:name=".module.view.i18n.I18nActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_i18n"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

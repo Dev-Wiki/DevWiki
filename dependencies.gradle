@@ -1,18 +1,17 @@
 ext {
 
     //编译SDK版本
-    compileSdkVer = 25
+    compileSdkVer = 26
     //构建工具版本
-    buildToolsVer = "25.0.3"
+    buildToolsVer = "26.0.3"
     //最低兼容版本
     minSdkVer = 15
     //测试过的版本
-    targetSdkVer = 25
+    targetSdkVer = 26
     //支持库的版本
-    supportVer = "25.2.0"
     //JDK版本
-    sourceCompatVer = JavaVersion.VERSION_1_7
-    targetCompatVer = JavaVersion.VERSION_1_7
+    sourceCompatVer = JavaVersion.VERSION_1_8
+    targetCompatVer = JavaVersion.VERSION_1_8
 
     shrinkResDebug = false
     debuggableDebug = true
@@ -27,10 +26,10 @@ ext {
     fileTree = fileTree(include: ['*.jar'], dir: 'libs')
 
     plugin_versions = [
-        versions   : "0.15.0",
-        buildGradle: "2.3.3",
-        butterknife: "8.6.0",
-        kotlin     : "1.1.2-5",
+        versions   : "0.17.0",
+        buildGradle: "3.0.1",
+        butterknife: "8.8.1",
+        kotlin     : "1.2.10",
         dexcount   : "0.6.1",
     ]
 
@@ -43,17 +42,21 @@ ext {
     ]
 
     versions = [
-        supportVersion       : "25.3.1",
+        supportVersion       : "26.1.0",
         supportMultidex      : "1.0.1",
+        constraintLayout     : "1.0.2",
+        testRunner           : "1.0.1",
+        espressoCore         : "3.0.1",
         junit                : "4.12",
-        kotlin               : "1.1.2-5",
+        kotlin               : "1.2.10",
         devLog               : "0.0.3",
         devRecycler          : "0.0.1",
         devCommon            : "0.0.1",
-        lifecycle            : "1.0.0-alpha3",
-        room                 : "1.0.0-alpha3",
+        lifecycle            : "1.0.0",
+        annotationProcessor  : "1.0.0",
+        room                 : "1.0.0",
 
-        butterknife          : "8.6.0",
+        butterknife          : "8.8.1",
         butterknifeCompiler  : "8.6.0",
         eventBus             : "3.0.0",
         gson                 : "2.6.1",
@@ -81,12 +84,17 @@ ext {
         supportDesign        : "com.android.support:design:${versions.supportVersion}",
         supportCardView      : "com.android.support:cardview-v7:${versions.supportVersion}",
         supportMultidex      : "com.android.support:multidex:${versions.supportMultidex}",
+        constraintLayout     : "com.android.support.constraint:constraint-layout:${versions.constraintLayout}",
+        testRunner           : "com.android.support.test:runner:${versions.testRunner}",
+        espressoCore         : "com.android.support.test.espresso:espresso-core:${versions.espressoCore}",
         junit                : "junit:junit:${versions.junit}",
         kotlin               : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin}",
 
         lifecycleRuntime     : "android.arch.lifecycle:runtime:${versions.lifecycle}",
         lifecycleExtensions  : "android.arch.lifecycle:extensions:${versions.lifecycle}",
         lifecycleCompiler    : "android.arch.lifecycle:compiler:${versions.lifecycle}",
+        lifecycleCommonJava  : "android.arch.lifecycle:common-java8:${versions.lifecycle}",
+        annotationProcessor  : "android.arch.lifecycle:compiler:${versions.annotationProcessor}",
         roomRuntime          : "android.arch.persistence.room:runtime:${versions.room}",
         roomCompiler         : "android.arch.persistence.room:compiler:${versions.room}",
         roomTesting          : "android.arch.persistence.room:testing:${versions.room}",

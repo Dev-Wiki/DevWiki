@@ -4,7 +4,7 @@ apply plugin: 'com.getkeepsafe.dexcount'
 
 android {
     compileSdkVersion compileSdkVer
-    buildToolsVersion buildToolsVer
+//    buildToolsVersion buildToolsVer
     defaultConfig {
         applicationId "net.devwiki.devwiki"
         minSdkVersion minSdkVer
@@ -19,26 +19,26 @@ android {
         }
     }
     lintOptions {
-          abortOnError false
+        abortOnError false
     }
 }
 
-task findbugs(type: FindBugs,dependsOn:'assembleDebug') {
+task findbugs(type: FindBugs, dependsOn: 'assembleDebug') {
 
-    ignoreFailures= true
-    effort= "default"
-    reportLevel= "low"
-    println( "$project.buildDir")
+    ignoreFailures = true
+    effort = "default"
+    reportLevel = "low"
+    println("$project.buildDir")
     classes = files("$project.buildDir/intermediates/classes")
-    source= fileTree("src/main/java/")
-    classpath= files()
-    reports{
-        xml.enabled=false
-        html.enabled=true
+    source = fileTree("src/main/java/")
+    classpath = files()
+    reports {
+        xml.enabled = false
+        html.enabled = true
         xml {
             destination "$project.buildDir/findbugs.xml"
         }
-        html{
+        html {
             destination "$project.buildDir/findbugs.html"
         }
     }
@@ -49,9 +49,12 @@ dependencies {
     compile libraries.mosbyMVP
     compile libraries.supportAppCompat
     compile libraries.supportDesign
+    compile libraries.constraintLayout
     compile libraries.butterknife
     compile libraries.devLog
     compile libraries.rxJava
     compile libraries.rxAndroid
     annotationProcessor libraries.butterknifeCompiler
+
+    compile 'com.github.zhaokaiqiang.klog:library:1.6.0'
 }

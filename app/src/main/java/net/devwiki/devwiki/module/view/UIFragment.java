@@ -12,13 +12,15 @@ import android.view.ViewGroup;
 import net.devwiki.devwiki.R;
 import net.devwiki.devwiki.module.view.activity.LaunchModeActivity;
 import net.devwiki.devwiki.module.view.animation.AnimationActivity;
+import net.devwiki.log.DevLog;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
  * UI相关
- * Created by zyz on 2017/3/21.
+ * @author devwiki
+ * Created by devwiki on 2017/3/21.
  */
 
 public class UIFragment extends Fragment {
@@ -50,6 +52,8 @@ public class UIFragment extends Fragment {
             case R.id.animation_btn:
                 intent = new Intent(getActivity(), AnimationActivity.class);
                 break;
+            default:
+                DevLog.w("未处理的点击事件:" + view.getId());
         }
         if (intent != null) {
             startActivity(intent);

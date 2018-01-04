@@ -72,4 +72,7 @@
     <string name="sub_cancel">SubCancel</string>
     <string name="obs_cancel">ObsCancel</string>
     <string name="complete">Complete</string>
+    <string name="title_activity_i18n">I18nActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
