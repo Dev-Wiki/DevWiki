@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import net.devwiki.devwiki.R;
 import net.devwiki.devwiki.module.view.activity.LaunchModeActivity;
 import net.devwiki.devwiki.module.view.animation.AnimationActivity;
+import net.devwiki.devwiki.module.view.i18n.I18nActivity;
 import net.devwiki.log.DevLog;
 
 import butterknife.ButterKnife;
@@ -42,7 +43,7 @@ public class UIFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.activity_btn, R.id.animation_btn})
+    @OnClick({R.id.activity_btn, R.id.animation_btn, R.id.i18n_btn})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -51,6 +52,9 @@ public class UIFragment extends Fragment {
                 break;
             case R.id.animation_btn:
                 intent = new Intent(getActivity(), AnimationActivity.class);
+                break;
+            case R.id.i18n_btn:
+                intent = new Intent(getActivity(), I18nActivity.class);
                 break;
             default:
                 DevLog.w("未处理的点击事件:" + view.getId());

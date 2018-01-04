@@ -59,9 +59,7 @@
         </activity>
         <activity
             android:name=".module.view.i18n.I18nActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_i18n"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/title_activity_i18n">
         </activity>
     </application>
 

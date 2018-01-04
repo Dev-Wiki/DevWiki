@@ -18,5 +18,10 @@
             android:id="@+id/animation_btn"
             style="@style/style_normal_button"
             android:text="@string/animation"/>
+
+        <Button
+            android:id="@+id/i18n_btn"
+            style="@style/style_normal_button"
+            android:text="@string/i18n"/>
     </LinearLayout>
 </ScrollView>

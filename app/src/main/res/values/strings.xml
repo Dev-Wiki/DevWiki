@@ -75,4 +75,6 @@
     <string name="title_activity_i18n">I18nActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="i18n">I18N</string>
+    <string name="get_language_info">获取语言信息</string>
 </resources>

@@ -26,8 +26,8 @@ public class BaseActivity extends AppCompatActivity {
     public void setContentView(@LayoutRes int layoutResID) {
         if (layoutResID == R.layout.activity_base) {
             super.setContentView(layoutResID);
-            mContentFl = (FrameLayout) this.findViewById(R.id.content_fl);
-            mToolbar = (Toolbar) this.findViewById(R.id.toolbar);
+            mContentFl = this.findViewById(R.id.content_fl);
+            mToolbar = this.findViewById(R.id.toolbar);
             setSupportActionBar(mToolbar);
             mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override
