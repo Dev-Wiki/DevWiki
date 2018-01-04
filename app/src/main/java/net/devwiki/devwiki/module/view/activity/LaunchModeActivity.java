@@ -48,6 +48,8 @@ public class LaunchModeActivity extends AppCompatActivity {
             case R.id.instance_btn:
                 intent = new Intent(this, SingleInstanceActivity.class);
                 break;
+            default:
+                DevLog.w("未处理的点击事件:" + view.getId());
         }
         if (intent != null) {
             startActivity(intent);
