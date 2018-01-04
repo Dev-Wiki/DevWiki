@@ -10,8 +10,6 @@ import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
 import net.devwiki.devwiki.module.thread.rxjava.RxJavaActivity;
-import net.devwiki.devwiki.module.view.activity.LaunchModeActivity;
-import net.devwiki.devwiki.module.view.animation.AnimationActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;

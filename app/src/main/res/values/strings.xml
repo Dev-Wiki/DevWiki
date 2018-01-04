@@ -30,51 +30,20 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- UI界面 -->
-    <string name="title_activity_bottom_nav">BottomNavActivity</string>
-    <string name="view_text_view">TextView</string>
-    <string name="view_edit_text">EditText</string>
-    <string name="view_list_view">ListView</string>
-    <string name="view_recycler_view">RecyclerView</string>
-    <string name="view_bottom_nav">BottomNavigationView</string>
-    <string name="view_badge_icon">BadgeIcon</string>
-    <string name="title_activity_text_view">TextViewActivity</string>
-    <string name="title_activity_edit_text">EditTextActivity</string>
-    <string name="drawable_text_view">DrawableTextView</string>
-    <string name="normal_text_view">NormalTextView</string>
-    <string name="html_text_view">HtmlTextView</string>
 
     <!-- EditText -->
-    <string name="please_input_name">请输入名称</string>
-    <string name="please_input_password">请输入密码</string>
-    <string name="one_input_btn">单个输入框(按钮上移)</string>
-    <string name="one_input_all_btn">单个输入框(整体上移)</string>
-    <string name="one_input_all2_btn">单个输入框(整体上移2)</string>
-    <string name="two_input_btn">两个输入框(按钮上移)</string>
-    <string name="two_input2_btn">两个输入框(不上移)</string>
-    <string name="two_input_all_btn">两个输入框(整体上移)</string>
     <string name="standard">Standard</string>
     <string name="single_task">SingleTask</string>
     <string name="single_top">SingleTop</string>
     <string name="single_instance">SingleInstance</string>
     <string name="activity">Activity</string>
-    <string name="fps_1">1FPS</string>
-    <string name="fps_2">2FPS</string>
-    <string name="fps_3">3.3FPS</string>
-    <string name="fps_5">5FPS</string>
-    <string name="fps_10">10FPS</string>
-    <string name="fps_20">20FPS</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
-    <string name="animation">Animation</string>
-    <string name="water_wave">波纹</string>
-    <string name="microphone">麦克风</string>
     <string name="rx_java">RxJava</string>
     <string name="sub_cancel">SubCancel</string>
     <string name="obs_cancel">ObsCancel</string>
     <string name="complete">Complete</string>
     <string name="title_activity_i18n">I18nActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="i18n">I18N</string>
     <string name="get_language_info">获取语言信息</string>
 </resources>

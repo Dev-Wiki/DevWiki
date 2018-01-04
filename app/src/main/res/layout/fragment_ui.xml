@@ -14,11 +14,6 @@
             style="@style/style_normal_button"
             android:text="@string/activity"/>
 
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/animation_btn"
-            style="@style/style_normal_button"
-            android:text="@string/animation"/>
-
         <Button
             android:id="@+id/i18n_btn"
             style="@style/style_normal_button"

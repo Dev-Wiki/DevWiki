@@ -39,22 +39,6 @@
         <activity
             android:name=".module.view.activity.SingleTopActivity"
             android:launchMode="singleTop"/>
-        <activity
-            android:name=".module.view.animation.AnimationActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/AppTheme.FullScreen"/>
-        <activity
-            android:name=".module.view.animation.FpsActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/AppTheme.FullScreen"/>
-        <activity
-            android:name=".module.view.animation.pic.FpsImageActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/AppTheme.FullScreen"/>
-        <activity
-            android:name=".module.view.animation.FpsCustomActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/AppTheme.FullScreen"/>
         <activity android:name=".module.thread.rxjava.RxJavaActivity">
         </activity>
         <activity
