@@ -2,10 +2,13 @@ package net.devwiki.devwiki.module.view.i18n;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.utils.LanguageUtil;
+import net.devwiki.log.DevLog;
 
 import java.util.Locale;
 
@@ -27,13 +30,20 @@ public class I18nActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.get_result_btn)
-    public void onViewClicked() {
-        mResultTv.append("getCountry:" + getResources().getConfiguration().locale.getCountry() + "\n");
-        mResultTv.append("getDisplayCountry:" + getResources().getConfiguration().locale.getDisplayCountry() + "\n");
-        mResultTv.append("getISO3Country:" + getResources().getConfiguration().locale.getISO3Country() +
-                "\n");
-        mResultTv.append("getISO3Language:" + getResources().getConfiguration().locale.getISO3Language() +
-                "\n");
+    @OnClick({R.id.get_result_btn, R.id.change_en_btn, R.id.change_zh_btn})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.get_result_btn:
+                mResultTv.setText(Locale.getDefault().getLanguage());
+                break;
+            case R.id.change_en_btn:
+                LanguageUtil.changeLanguage(new Locale("en"));
+                break;
+            case R.id.change_zh_btn:
+                LanguageUtil.changeLanguage(new Locale("zh"));
+                break;
+            default:
+                DevLog.d();
+        }
     }
 }

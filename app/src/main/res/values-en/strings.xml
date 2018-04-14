@@ -5,26 +5,26 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="blog_short_label">Blog</string>
-    <string name="blog_long_label">打开Blog</string>
+    <string name="blog_long_label">Open Blog</string>
     <string name="github_short_label">GitHub</string>
-    <string name="github_long_label">打开GitHub</string>
+    <string name="github_long_label">Open GitHub</string>
 
-    <string name="action_settings">设置</string>
-    <string name="nav_ui">UI界面</string>
-    <string name="nav_service">后台服务</string>
-    <string name="nav_data">数据存储</string>
-    <string name="nav_network">网络访问</string>
-    <string name="nav_media">多媒体</string>
-    <string name="nav_device">硬件设备</string>
+    <string name="action_settings">Setting</string>
+    <string name="nav_ui">UI Activity</string>
+    <string name="nav_service">Background Service</string>
+    <string name="nav_data">Data</string>
+    <string name="nav_network">Net</string>
+    <string name="nav_media">Multimedia</string>
+    <string name="nav_device">Hardware</string>
     <string name="blog_address">http://blog.devwiki.net</string>
-    <string name="nav_share">分享</string>
-    <string name="nav_send">发送</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_send">Send</string>
 
-    <string name="btn_ok">确认</string>
-    <string name="btn_cancel">取消</string>
-    <string name="btn_return">返回</string>
-    <string name="btn_next">下一步</string>
-    <string name="btn_previous">上一步</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_return">Back</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_previous">Previous</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -45,7 +45,7 @@
     <string name="complete">Complete</string>
     <string name="title_activity_i18n">I18nActivity</string>
     <string name="i18n">I18N</string>
-    <string name="get_language_info">获取语言信息</string>
-    <string name="change_to_chinese">切换到中文</string>
-    <string name="change_to_english">切换到英文</string>
+    <string name="get_language_info">Get language info</string>
+    <string name="change_to_chinese">Change to Chinese</string>
+    <string name="change_to_english">Change to English</string>
 </resources>
