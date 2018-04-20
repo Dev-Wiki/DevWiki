@@ -26,6 +26,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':base')
+    implementation project(':room')
     implementation libraries.mosbyMVP
     implementation libraries.kotlin
     implementation libraries.supportAppCompat

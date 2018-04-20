@@ -1,13 +1,13 @@
 ext {
 
     //编译SDK版本
-    compileSdkVer = 26
+    compileSdkVer = 27
     //构建工具版本
     buildToolsVer = "26.0.3"
     //最低兼容版本
-    minSdkVer = 15
+    minSdkVer = 21
     //测试过的版本
-    targetSdkVer = 26
+    targetSdkVer = 27
     //支持库的版本
     //JDK版本
     sourceCompatVer = JavaVersion.VERSION_1_8
@@ -42,18 +42,18 @@ ext {
     ]
 
     versions = [
-        supportVersion       : "26.1.0",
-        supportMultidex      : "1.0.1",
-        constraintLayout     : "1.0.2",
+        supportVersion       : "27.1.1",
+        supportMultidex      : "1.0.3",
+        constraintLayout     : "1.1.0",
         testRunner           : "1.0.1",
         espressoCore         : "3.0.1",
         junit                : "4.12",
-        kotlin               : "1.2.10",
+        kotlin               : "1.2.30",
         devLog               : "0.0.3",
         devRecycler          : "0.0.1",
         devCommon            : "0.0.1",
-        lifecycle            : "1.0.0",
-        annotationProcessor  : "1.0.0",
+        lifecycle            : "1.1.1",
+        annotationProcessor  : "1.1.1",
         room                 : "1.0.0",
 
         butterknife          : "8.8.1",
@@ -63,14 +63,14 @@ ext {
         leakcanary           : "1.5",
         blockcanary          : "1.4.0",
         mosbyMVP             : "3.0.4",
-        rxJava               : "1.2.0", //
-        rxAndroid            : "1.2.1", //
-        retrofit             : "2.1.0", //
-        retrofitConvertGson  : "2.1.0", //
-        retrofitAdapterRxJava: "2.1.0", //
-        okhttp               : "3.4.1",//
-        okhttpLogInterceptor : "3.4.1",
-        okio                 : "1.9.0", //
+        rxJava               : "2.1.2", //
+        rxAndroid            : "2.0.2", //
+        retrofit             : "2.4.0", //
+        retrofitConvertGson  : "2.4.0", //
+        retrofitAdapterRxJava: "2.4.0", //
+        okhttp               : "3.10.0",//
+        okhttpLogInterceptor : "3.10.0",
+        okio                 : "1.14.0", //
         wire                 : "2.1.2",
 
         glide                : "3.7.0",
@@ -90,11 +90,14 @@ ext {
         junit                : "junit:junit:${versions.junit}",
         kotlin               : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin}",
 
-        lifecycleRuntime     : "android.arch.lifecycle:runtime:${versions.lifecycle}",
         lifecycleExtensions  : "android.arch.lifecycle:extensions:${versions.lifecycle}",
+        lifecycleViewModel   : "android.arch.lifecycle:viewmodel:${versions.lifecycle}",
+        lifecycleLiveData    : "android.arch.lifecycle:livedata:${versions.lifecycle}",
         lifecycleCompiler    : "android.arch.lifecycle:compiler:${versions.lifecycle}",
-        lifecycleCommonJava  : "android.arch.lifecycle:common-java8:${versions.lifecycle}",
+        lifecycleCommonJava8  : "android.arch.lifecycle:common-java8:${versions.lifecycle}",
+
         annotationProcessor  : "android.arch.lifecycle:compiler:${versions.annotationProcessor}",
+
         roomRuntime          : "android.arch.persistence.room:runtime:${versions.room}",
         roomCompiler         : "android.arch.persistence.room:compiler:${versions.room}",
         roomTesting          : "android.arch.persistence.room:testing:${versions.room}",
@@ -112,8 +115,8 @@ ext {
         blockcanary          : "com.github.markzhai:blockcanary-android:${versions.blockcanary}",
 
         mosbyMVP             : "com.hannesdorfmann.mosby3:mvp:${versions.mosbyMVP}",
-        rxJava               : "io.reactivex:rxjava:${versions.rxJava}", //
-        rxAndroid            : "io.reactivex:rxandroid:${versions.rxAndroid}", //
+        rxJava               : "io.reactivex.rxjava2:rxjava:${versions.rxJava}", //
+        rxAndroid            : "io.reactivex.rxjava2:rxandroid:${versions.rxAndroid}", //
         retrofit             : "com.squareup.retrofit2:retrofit:${versions.retrofit}", //
         retrofitConvertGson  : "com.squareup.retrofit2:converter-jackson:${versions.retrofitConvertGson}", //
         retrofitAdapterRxJava: "com.squareup.retrofit2:adapter-rxjava:${versions.retrofitAdapterRxJava}", //
