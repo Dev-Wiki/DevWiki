@@ -59,7 +59,7 @@ ext {
         butterknife          : "8.8.1",
         butterknifeCompiler  : "8.6.0",
         eventBus             : "3.0.0",
-        gson                 : "2.6.1",
+        gson                 : "2.8.1",
         leakcanary           : "1.5",
         blockcanary          : "1.4.0",
         mosbyMVP             : "3.0.4",

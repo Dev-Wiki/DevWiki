@@ -6,7 +6,6 @@ apply from: "${rootDir}/findbugs.gradle"
 
 android {
     compileSdkVersion compileSdkVer
-//    buildToolsVersion buildToolsVer
     defaultConfig {
         applicationId "net.devwiki.devwiki"
         minSdkVersion minSdkVer
@@ -37,6 +36,10 @@ dependencies {
 
     implementation libraries.rxJava
     implementation libraries.rxAndroid
+
+    implementation libraries.okhttp
+
+    implementation libraries.gson
 
     implementation libraries.butterknife
     annotationProcessor libraries.butterknifeCompiler
