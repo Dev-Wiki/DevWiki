@@ -2,7 +2,7 @@
 
 apply from: 'check.gradle'
 buildscript {
-    apply from: "${rootDir}/dependencies.gradle"
+    apply from: "${rootDir}/config.gradle"
     repositories {
         google()
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
@@ -15,7 +15,7 @@ buildscript {
 }
 
 allprojects {
-    apply from: "${rootDir}/dependencies.gradle"
+    apply from: "${rootDir}/config.gradle"
     repositories {
         google()
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }

@@ -49,7 +49,7 @@ ext {
         espressoCore         : "3.0.1",
         junit                : "4.12",
         kotlin               : "1.2.30",
-        devLog               : "0.0.3",
+        devLog               : "0.0.4",
         devRecycler          : "0.0.1",
         devCommon            : "0.0.1",
         lifecycle            : "1.1.1",
