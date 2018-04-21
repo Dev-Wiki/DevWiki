@@ -50,6 +50,7 @@ ext {
         junit                : "4.12",
         kotlin               : "1.2.30",
         devLog               : "0.0.4",
+        devEncode            : "0.0.1",
         devRecycler          : "0.0.1",
         devCommon            : "0.0.1",
         lifecycle            : "1.1.1",
@@ -94,7 +95,7 @@ ext {
         lifecycleViewModel   : "android.arch.lifecycle:viewmodel:${versions.lifecycle}",
         lifecycleLiveData    : "android.arch.lifecycle:livedata:${versions.lifecycle}",
         lifecycleCompiler    : "android.arch.lifecycle:compiler:${versions.lifecycle}",
-        lifecycleCommonJava8  : "android.arch.lifecycle:common-java8:${versions.lifecycle}",
+        lifecycleCommonJava8 : "android.arch.lifecycle:common-java8:${versions.lifecycle}",
 
         annotationProcessor  : "android.arch.lifecycle:compiler:${versions.annotationProcessor}",
 
@@ -104,6 +105,7 @@ ext {
         roomRxJava           : "android.arch.persistence.room:rxjava2:${versions.room}",
 
         devLog               : "net.devwiki.log:log:${versions.devLog}",
+        devEncode            : "net.devwiki.util:encode:${versions.devEncode}",
         devRecycler          : "net.devwiki.recycler:recycler:${versions.devRecycler}",
         devCommon            : "net.devwiki.common:common:${versions.devCommon}",
 

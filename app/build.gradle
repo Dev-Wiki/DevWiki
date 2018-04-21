@@ -26,7 +26,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':base')
     implementation project(':room')
     implementation libraries.mosbyMVP
     implementation libraries.kotlin
@@ -35,6 +34,7 @@ dependencies {
     implementation libraries.constraintLayout
 
     implementation libraries.devLog
+    implementation libraries.devEncode
 
     implementation libraries.rxJava
     implementation libraries.rxAndroid

@@ -20,10 +20,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly libraries.supportAppCompat
-    compileOnly libraries.roomRuntime
-    compileOnly libraries.roomCompiler
+    implementation libraries.supportAppCompat
+    implementation libraries.roomRuntime
+    implementation libraries.roomCompiler
     testImplementation libraries.roomTesting
-    compileOnly libraries.roomRxJava
+    implementation libraries.roomRxJava
+    implementation libraries.devLog
+    implementation libraries.devEncode
     testImplementation libraries.junit
 }
