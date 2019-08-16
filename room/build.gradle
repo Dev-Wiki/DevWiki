@@ -22,10 +22,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation libraries.supportAppCompat
     implementation libraries.roomRuntime
-    implementation libraries.roomCompiler
+    annotationProcessor libraries.roomCompiler
     testImplementation libraries.roomTesting
     implementation libraries.roomRxJava
     implementation libraries.devLog
-    implementation libraries.devEncode
+//    implementation libraries.devEncode
     testImplementation libraries.junit
 }

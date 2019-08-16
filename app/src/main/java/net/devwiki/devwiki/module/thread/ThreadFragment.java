@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
-import net.devwiki.devwiki.module.thread.rxjava.RxJavaActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -43,8 +42,8 @@ public class ThreadFragment extends Fragment {
         Intent intent = null;
         switch (view.getId()) {
             case R.id.rxj_java_btn:
-                intent = new Intent(getActivity(), RxJavaActivity.class);
                 break;
+                default:
         }
         if (intent != null) {
             startActivity(intent);

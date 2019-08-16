@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="net.devwiki.devwiki">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.devwiki.devwiki">
 
     <application
         android:name=".DevWikiApp"
@@ -8,7 +9,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -39,8 +41,6 @@
         <activity
             android:name=".module.view.activity.SingleTopActivity"
             android:launchMode="singleTop"/>
-        <activity android:name=".module.thread.rxjava.RxJavaActivity">
-        </activity>
         <activity
             android:name=".module.view.i18n.I18nActivity"
             android:label="@string/title_activity_i18n">
