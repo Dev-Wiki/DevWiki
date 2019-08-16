@@ -1,13 +1,13 @@
 ext {
 
     //编译SDK版本
-    compileSdkVer = 27
+    compileSdkVer = 28
     //构建工具版本
-    buildToolsVer = "26.0.3"
+    buildToolsVer = "28.0.3"
     //最低兼容版本
     minSdkVer = 21
     //测试过的版本
-    targetSdkVer = 27
+    targetSdkVer = 28
     //支持库的版本
     //JDK版本
     sourceCompatVer = JavaVersion.VERSION_1_8
@@ -42,7 +42,7 @@ ext {
     ]
 
     versions = [
-        supportVersion       : "27.1.1",
+        supportVersion       : "28.0.0",
         supportMultidex      : "1.0.3",
         constraintLayout     : "1.1.0",
         testRunner           : "1.0.1",
